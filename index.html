@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Untitled</title>
+    <title>Meri Ushitkova</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
@@ -16,363 +16,326 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Bitter:400,700"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/favicon.png">
   </head>
 
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-nav"
-    >
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand">
-          <img src="./assets/signature.png" height="50" alt="USHITKOVA" />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ml-auto">
-            <a href="#" class="nav-item nav-link">About</a>
-            <a href="#" class="nav-item nav-link">Portfolio</a>
-            <a href="#" class="nav-item nav-link">Resume</a>
-            <a href="#" class="nav-item nav-link">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HOME section -->
-    <!-- <div class="row flex-grow-1 overflow-hidden home">
-      <div class="col mh-100 overflow-auto">
-        <div class="row flex-shrink-0 wrap">
-          <div
-            class="col-md-6"
-            style="
-              height: 100vh;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <h1 class="text-center">MERI USHITKOVA</h1>
-            <p class="text-center">-UX/UI Designer based in North Macedonia</p>
-          </div>
-          <div class="col-md-6 header-dark"></div>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="row overflow-hidden" style="background-color: #f4eeec">
-      <div
-        class="col mh-100 overflow-auto container mb-4"
-        style="height: 100vh"
+    class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-nav"
+  >
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="./assets/signature.png" height="50" alt="USHITKOVA" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
       >
-        <div class="row h-100 justify-content-center align-items-center">
-          <div class="col-md-4 col-lg-6">
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <img src="./assets/name.PNG" height="150px" />
-            </div>
-
-            <!-- <div class="row">
-              <div style="margin-left: auto; margin-right: auto;">
-                <h1 class="text-center main-text">MERI</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div style="margin-left: auto; margin-right: auto;">
-                <h1 class="text-center main-text">USHITKOVA</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div style="margin-left: auto; margin-right: auto; font-weight: 100;">
-                <p class="text-center">
-                  -UX/UI Designer based in North Macedonia
-                </p>
-              </div>
-            </div> -->
-          </div>
-          <div class="col-md-4 col-lg-6">
-            <div class="header-dark"></div>
-          </div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+          <a href="#" class="nav-item nav-link" id="navAbout">About</a>
+          <a href="#" class="nav-item nav-link" id="navProjects">Portfolio</a>
+          <a href="#" class="nav-item nav-link" id="resume">Resume</a>
+          <a href="mailto:ushitkovameri@outlook.com" target="_blank" class="nav-item nav-link" id="navContact">Contact</a>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div style="margin-left: auto; margin-right: auto">
-                <h1 class="text-center">MERI</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div style="margin-left: auto; margin-right: auto">
-                <h1 class="text-center">USHITKOVA</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div style="margin-left: auto; margin-right: auto">
-                <p class="text-center">
-                  -UX/UI Designer based in North Macedonia
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 header-dark"></div>
-        </div> -->
       </div>
     </div>
-    <!-- Projects section -->
-    <div
-      id="projects"
-      class="row overflow-hidden"
-      style="background-color: #f4eeec"
-    >
-      <div class="col mh-100 overflow-auto container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Works 2021</span>
-        </h2>
+  </nav>
+    <section class="hero">
+      <div class="container">
+        <div class="row row-0">
+          <div class="col-lg-8">
+            <div class="hero-box">
+              <h1 class="title">Meri<br/><span>Ushitkova</span><br/><h5 class="">-UX/UI Designer based in North Macedonia <span id="i_am_a"></span></h5></h1>
+              <!-- <h4 class="subtitle">-UX/UI Designer based in North Macedonia <span id="i_am_a"></span></h4> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- About me -->
+    <section class="about-me" id="about-me">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-4" style="margin-left: 100px; margin-bottom: 20px">
-            <div class="card">
-              <img
-                src="./assets/rectangle.PNG"
-                class="card-img-top"
-                alt="..."
-                height="350px"
-                width="500px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Design<button
+          <h1>About me</h1>
+          <p class="description">
+            My name is Meri, I am a UX/UI Designer. I'm passionate about improving the lives of others 
+            through design. I'm constantly learning new things everyday and love meeting
+            people who are motivated and unafraid of sharing their ideas with the world.
+
+          </p>
+          <br\>
+          <br>
+          <p class="description" >
+            I enjoy developing products from concept to implementation I always strive to expand
+             competence and opportunities, to help bridge the gap between people and the customer’s 
+             product.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <h4>Skills:</h4>
+            <div class="skills">
+              <div class="row">
+                <span class="badge badge-primary">Possesion of modern design trends
+                </span>
+                <span class="badge badge-primary">Wireframing
+                </span>
+                <span class="badge badge-primary">Prototyping
+                </span>
+              </div>
+
+              <div class="row">
+                <span class="badge badge-primary">User empathy
+                </span>
+                <span class="badge badge-primary">Animation
+                </span>
+                <span class="badge badge-primary">Teamwork
+                </span>
+              </div>
+
+              <div class="row">
+                <span class="badge badge-primary">User Interface design
+                </span>
+                <span class="badge badge-primary">User research 
+                </span>
+                <span class="badge badge-primary">Information architecture
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h4>Programs:</h4>
+            <p>Confident - Figma, Framer,Adobe XD,
+              InVision,Illustrator,Photoshop
+            </p>
+            <br/>
+            <p>Basic knowledge of HTML,CSS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="row">
+          <h1>Projects</h1>
+          <div class="row">
+            <div class="col-lg-4 ml-5">
+              <div class="card">
+                <img
+                  src="./assets/rectangle.PNG"
+                  class="card-img-top"
+                  alt="..."
+                  height="350px"
+                  width="600px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Design<button
+                      class="btn btn-outline btn-lg"
+                    >
+                      <i class="fa fa fa-arrow-right"></i>
+                    </button>
+                  </h5>
+                  <p class="card-text">
+                    <strong>Univerzitetsko studentsko sobranie</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <div class="card">
+                <img
+                  src="./assets/rectangle.PNG"
+                  class="card-img-top"
+                  alt="..."
+                  height="350px"
+                  width="500px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Redesign<button
                     class="btn btn-outline btn-lg"
-                    style="
-                      float: right;
-                      background-color: #fbdfd7;
-                      border: none;
-                    "
                   >
                     <i class="fa fa fa-arrow-right"></i>
-                  </button>
-                </h5>
-                <p class="card-text">
-                  <strong>Univerzitetsko studentsko sobranie</strong>
-                </p>
+                  </button></h5>
+                  <p class="card-text"><strong>Sugarwish</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <button class="btn btn-outline btn-lg">
-                  <i class="fa fa fa-arrow-right"></i>
-                </button>
+          <div class="row">
+            <div class="col-lg-4 ml-5">
+              <div class="card">
+                <img
+                  src="./assets/rectangle.PNG"
+                  class="card-img-top"
+                  alt="..."
+                  height="350px"
+                  width="600px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Design<button
+                      class="btn btn-outline btn-lg"
+                    >
+                      <i class="fa fa fa-arrow-right"></i>
+                    </button>
+                  </h5>
+                  <p class="card-text">
+                    <strong>Jane bank</strong>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-sm-4 ml-auto"
-            style="margin-right: 100px; margin-bottom: 20px"
-          >
-            <div class="card">
-              <img
-                src="./assets/rectangle.PNG"
-                class="card-img-top"
-                alt="..."
-                height="350px"
-                width="500px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Redesign</h5>
-                <p class="card-text"><strong>Sugarwish</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" style="margin-bottom: 100px">
-          <div class="col-sm-4" style="margin-left: 100px; margin-bottom: 20px">
-            <div class="card">
-              <img
-                src="./assets/rectangle.PNG"
-                class="card-img-top"
-                alt="..."
-                height="350px"
-                width="500px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Design</h5>
-                <p class="card-text"><strong>Jane bank</strong></p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-4 ml-auto"
-            style="margin-right: 100px; margin-bottom: 20px"
-          >
-            <div class="card">
-              <img
-                src="./assets/rectangle.PNG"
-                class="card-img-top"
-                alt="..."
-                height="350px"
-                width="500px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Hackathon design</h5>
-                <p class="card-text"><strong>NLB</strong></p>
+            <div class="col-lg-4 ml-auto">
+              <div class="card">
+                <img
+                  src="./assets/rectangle.PNG"
+                  class="card-img-top"
+                  alt="..."
+                  height="350px"
+                  width="500px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hackathon design<button
+                    class="btn btn-outline btn-lg"
+                  >
+                    <i class="fa fa fa-arrow-right"></i>
+                  </button></h5>
+                  <p class="card-text"><strong>NLB</strong></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- How I work section -->
-    <div
-      id="how_i_work"
-      class="row overflow-hidden"
-      style="background-color: #f4eeec"
-    >
-      <div class="col mh-100 overflow-auto container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__work">How I work</span>
-        </h2>
+    </section>
 
-        <div class="row work_section">
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title work-title">
-                  Briefing <span class="work_number">01</span>
-                </h5>
-                <p class="card-text">
-                  This is a preliminary stage, discuss the tasks of the
-                  projectand possible ways of implementation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title work-title">
-                  Analytics <span class="work_number">02</span>
-                </h5>
-                <p class="card-text">
-                  After agreeing, I do research and analysis and select
-                  references for the successful solution of the task.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title work-title">
-                  Prototype <span class="work_number">03</span>
-                </h5>
-                <p class="card-text">
-                  Schematical representation of pages, work out the
-                  structure,functionality and logic of user interaction.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" style="padding-bottom: 200px">
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title work-title">
-                  Design <span class="work_number">04</span>
-                </h5>
-                <p class="card-text">
-                  I develop the design of the dekstop versions of all pages with
-                  design concept and the approved prototype.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title work-title">
-                  Adaptive <span class="work_number">05</span>
-                </h5>
-                <p class="card-text">
-                  To make the project look equally good on all devices, I make
-                  design options for mobile,tablet, as well as modal windows.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title work-title">
-                  Final <span class="work_number">06</span>
-                </h5>
-                <p class="card-text">
-                  Transfer of the layout to the customer. If necessary, site
-                  layout is performed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- How I work section -->
-    <div
-      id="how_i_work"
-      class="row overflow-hidden"
-      style="background-color: #f4eeec"
-    >
-      <div class="col mh-100 overflow-auto container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__work"
-            >INTERESTED IN WORKING TOGETHER?<br />
-            LET'S START!</span
-          >
-          <div class="heading_buttons">
-            <button type="button" class="btn btn-outline btn-lg">Email</button>
-            <button type="button" class="btn btn-outline btn-lg">
-              LinkedIn
-            </button>
-          </div>
-        </h2>
-
-        <!-- <div class="col">
-          <button type="button" class="btn btn-outline btn-lg">Email</button>
-          <button type="button" class="btn btn-outline btn-lg">LinkedIn</button>
-        </div> -->
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <!-- <footer class="footer-09">
-      <div class="container-fluid">
+    <!-- How i work -->
+    <section class="work" id="work">
+      <div class="container main-container">
         <div class="row">
-          <div class="col">ABOUT</div>
-          <div class="col">PORTFOLIO</div>
-          <div class="col">
-            <i class="fa fa-linkedin-square" style="margin-right: 50px"></i
-            ><i class="fa fa-behance"></i>
+          <h1>How i work</h1>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title work-title">
+                    Briefing <span class="work_number">01</span>
+                  </h5>
+                  <p class="card-text">
+                    This is a preliminary stage, discuss the tasks of the
+                    projectand possible ways of implementation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title work-title">
+                    Analytics <span class="work_number">02</span>
+                  </h5>
+                  <p class="card-text">
+                    After agreeing, I do research and analysis and select
+                    references for the successful solution of the task.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title work-title">
+                    Prototype <span class="work_number">03</span>
+                  </h5>
+                  <p class="card-text">
+                    Schematical representation of pages, work out the
+                    structure,functionality and logic of user interaction.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">RESUME</div>
-          <div class="col">CONTACT</div>
+
+          <div class="row">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title work-title">
+                      Design <span class="work_number">04</span>
+                    </h5>
+                    <p class="card-text">
+                      I develop the design of the dekstop versions of all pages with
+                      design concept and the approved prototype.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title work-title">
+                      Adaptive <span class="work_number">05</span>
+                    </h5>
+                    <p class="card-text">
+                      To make the project look equally good on all devices, I make
+                      design options for mobile,tablet, as well as modal windows.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title work-title">
+                      Final <span class="work_number">06</span>
+                    </h5>
+                    <p class="card-text">
+                      Transfer of the layout to the customer. If necessary, site
+                      layout is performed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </section>
 
-    <footer class="footer-09 pt-2">
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <h1>INTERESTED IN WORKING TOGETHER?<br />
+           LET'S START!
+          </h1>
+          <br />
+          <div class="col-md-6">
+            <div class="row buttons">
+              <a href="mailto:ushitkovameri@outlook.com" target="_blank" class="button">Email</a>
+              <a href="https://www.linkedin.com/in/meri-ushitkova-048b1a220" target="_blank" class="button button-left">LinkedIn</a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer pt-2">
       <div class="container">
         <div class="row align-center">
           <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
@@ -383,8 +346,8 @@
           </div>
           <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
             <h6 class="footer-heading d-flex align-items-center">
-              <i class="fa fa-linkedin-square ml-4 mr-4"></i
-              ><i class="fa fa-behance"></i>
+              <i class="fa fa-linkedin-square ml-4 mr-4 clickable"  id="linkedin"></i
+              ><i class="fa fa-behance" id="behance"></i>
             </h6>
           </div>
           <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
@@ -396,11 +359,12 @@
         </div>
         <div class="row">
           <div class="container align-center">
-            <span class="align-center"> ushitkovameri@outlook.com </span>
+            <span class="align-center clickable" id="email"> ushitkovameri@outlook.com </span>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
