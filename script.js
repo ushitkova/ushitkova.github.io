@@ -6,6 +6,14 @@ $("#linkedin").on("click", function () {
   window.open("https://www.linkedin.com/in/meri-ushitkova-048b1a220", "_blank");
 });
 
+$("#aboutFooter").on("click", function () {
+  location.href = "#about-me"
+});
+
+$("#projectsFooter").on("click", function () {
+  location.href = "#projects"
+});
+
 $("#behance").on("click", function () {
   window.open(
     "https://www.behance.net/meriushitkova?fbclid=IwAR2rbx1cGCks0LZ5-5yDkNKcnIF6-Pg20cDAyahaZSSgbMdlzT2FSUH8AI8",
