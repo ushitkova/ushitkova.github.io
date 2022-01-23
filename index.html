@@ -33,8 +33,8 @@
       <button
         type="button"
         class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,7 +42,7 @@
         <div class="navbar-nav ml-auto">
           <a href="#about-me" class="nav-item nav-link" id="navAbout">About</a>
           <a href="#projects" class="nav-item nav-link" id="navProjects">Portfolio</a>
-          <a class="nav-item nav-link" id="resume">Resume</a>
+          <a class="nav-item nav-link clickable" id="resume">Resume</a>
           <a href="mailto:ushitkovameri@outlook.com" target="_blank" class="nav-item nav-link" id="navContact">Contact</a>
         </div>
       </div>
@@ -51,11 +51,10 @@
     <section class="hero">
       <div class="container">
         <div class="row row-0">
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-md-6 col-sm-4">
             <div class="hero-box">
 
               <h1 class="title">Meri<br/><span>Ushitkova</span><br/><h5 class="">-UX/UI Designer based in North Macedonia <span id="i_am_a"></span></h5></h1>
-              <!-- <h4 class="subtitle">-UX/UI Designer based in North Macedonia <span id="i_am_a"></span></h4> -->
             </div>
           </div>
         </div>
@@ -65,26 +64,25 @@
     <!-- About me -->
     <section class="about-me" id="about-me">
       <div class="container">
-        <div class="row">
-          <h1>About me</h1>
-          <p class="description">
-            My name is Meri, I am a UX/UI Designer. I'm passionate about improving the lives of others 
-            through design. I'm constantly learning new things everyday and love meeting
-            people who are motivated and unafraid of sharing their ideas with the world.
+        <h1>About me</h1>
+        <p class="description">
+          My name is Meri, I am a UX/UI Designer. I'm passionate about improving the lives of others 
+          through design. I'm constantly learning new things everyday and love meeting
+          people who are motivated and unafraid of sharing their ideas with the world.
 
-          </p>
-          <br\>
-          <br>
-          <p class="description" >
-            I enjoy developing products from concept to implementation. I always strive to expand
-             competence and opportunities, to help bridge the gap between people and the customer’s 
-             product.
-          </p>
-        </div>
+        </p>
+        <br\>
+        <br>
+        <p class="description" >
+          I enjoy developing products from concept to implementation. I always strive to expand
+           competence and opportunities, to help bridge the gap between people and the customer’s 
+           product.
+        </p>
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-7 col-12">
             <h4>Skills:</h4>
             <div class="skills">
+
               <div class="row">
                 <span class="badge badge-primary">Possesion of modern design trends
                 </span>
@@ -113,14 +111,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 col-12">
+
             <h4>Programs:</h4>
-            <p>Confident - Figma, Framer,Adobe XD,
-              InVision,Illustrator,Photoshop
+            <p>Confident - Figma, Framer, Adobe XD,
+              InVision, Illustrator, Photoshop
             </p>
             <br/>
-            <p>Basic knowledge of HTML,CSS.
+            <p>Basic knowledge of HTML, CSS.
             </p>
+          </div>
           </div>
         </div>
       </div>
@@ -131,207 +131,138 @@
 
     <section class="projects" id="projects">
       <div class="container">
-        <div class="row">
-          <h1>Projects</h1>
-          <div class="row">
-            <div class="col-lg-4 ml-5">
-              <div class="card">
-                <img
-                  src="./assets/rectangle.PNG"
-                  class="card-img-top"
-                  alt="..."
-                  height="350px"
-                  width="600px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Design<button
-                      class="btn btn-outline btn-lg"
-                    >
-                      <i class="fa fa fa-arrow-right"></i>
-                    </button>
-                  </h5>
-                  <p class="card-text">
-                    <strong>Univerzitetsko studentsko sobranie</strong>
-                  </p>
-                </div>
+        <h1>Projects</h1>
+        <div class="d-flex justify-content-center">
+            <div class="card projects img-fluid">
+              <div id="project-uss">
+                <img class="card-img-top" src="assets/uss.png" alt="Card image">
+                <img src="assets/uss_hover.png" class="img-top" alt="Card Front">
               </div>
             </div>
-            <div class="col-lg-4 ml-auto">
-              <div class="card">
-                <img
-                  src="./assets/rectangle.PNG"
-                  class="card-img-top"
-                  alt="..."
-                  height="350px"
-                  width="500px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Redesign<button
-                    class="btn btn-outline btn-lg"
-                  >
-                    <i class="fa fa fa-arrow-right"></i>
-                  </button></h5>
-                  <p class="card-text"><strong>Sugarwish</strong></p>
-                </div>
+            <div class="card projects img-fluid">
+              <div id="project-sugarwish">
+                <img class="card-img-top" src="assets/sugarwish.png" alt="Card image">
+                <img src="assets/sugarwish_hover.png" class="img-top" alt="Card Front">
               </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4 ml-5">
-              <div class="card">
-                <img
-                  src="./assets/rectangle.PNG"
-                  class="card-img-top"
-                  alt="..."
-                  height="350px"
-                  width="600px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Design<button
-                      class="btn btn-outline btn-lg"
-                    >
-                      <i class="fa fa fa-arrow-right"></i>
-                    </button>
-                  </h5>
-                  <p class="card-text">
-                    <strong>Jane bank</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 ml-auto">
-              <div class="card">
-                <img
-                  src="./assets/rectangle.PNG"
-                  class="card-img-top"
-                  alt="..."
-                  height="350px"
-                  width="500px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Hackathon design<button
-                    class="btn btn-outline btn-lg"
-                  >
-                    <i class="fa fa fa-arrow-right"></i>
-                  </button></h5>
-                  <p class="card-text"><strong>NLB</strong></p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="card projects img-fluid">
+            <div id="project-janebank">
+              <img class="card-img-top" src="assets/janebank.png" alt="Card image">
+              <img src="assets/janebank_hover.png" class="img-top" alt="Card Front">
+            </div>
+          </div>
+          <div class="card projects img-fluid">
+            <div id="project-nlb">
+              <img class="card-img-top" src="assets/nlb.png" alt="Card image">
+              <img src="assets/nlb_hover.jpg" class="img-top" alt="Card Front">
+            </div>
+          </div>
       </div>
+    </div>
     </section>
 
     <!-- How i work -->
     <section class="work" id="work">
-      <div class="container main-container">
+      <div class="container">
+        <h1>How i work</h1>
         <div class="row">
-          <h1>How i work</h1>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title work-title">
-                    Briefing <span class="work_number">01</span>
-                  </h5>
-                  <p class="card-text">
-                    This is a preliminary stage, discuss the tasks of the
-                    projectand possible ways of implementation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title work-title">
-                    Analytics <span class="work_number">02</span>
-                  </h5>
-                  <p class="card-text">
-                    After agreeing, I do research and analysis and select
-                    references for the successful solution of the task.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title work-title">
-                    Prototype <span class="work_number">03</span>
-                  </h5>
-                  <p class="card-text">
-                    Schematical representation of pages, work out the
-                    structure,functionality and logic of user interaction.
-                  </p>
-                </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title work-title">
+                  Briefing <span class="work_number">01</span>
+                </h5>
+                <p class="card-text">
+                  This is a preliminary stage, discuss the tasks of the
+                  projectand possible ways of implementation.
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title work-title">
-                      Design <span class="work_number">04</span>
-                    </h5>
-                    <p class="card-text">
-                      I develop the design of the dekstop versions of all pages with
-                      design concept and the approved prototype.
-                    </p>
-                  </div>
-                </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title work-title">
+                  Analytics <span class="work_number">02</span>
+                </h5>
+                <p class="card-text">
+                  After agreeing, I do research and analysis and select
+                  references for the successful solution of the task.
+                </p>
               </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title work-title">
-                      Adaptive <span class="work_number">05</span>
-                    </h5>
-                    <p class="card-text">
-                      To make the project look equally good on all devices, I make
-                      design options for mobile,tablet, as well as modal windows.
-                    </p>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title work-title">
+                  Prototype <span class="work_number">03</span>
+                </h5>
+                <p class="card-text">
+                  Schematical representation of pages, work out the
+                  structure,functionality and logic of user interaction.
+                </p>
               </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title work-title">
-                      Final <span class="work_number">06</span>
-                    </h5>
-                    <p class="card-text">
-                      Transfer of the layout to the customer. If necessary, site
-                      layout is performed.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title work-title">
+                  Design <span class="work_number">04</span>
+                </h5>
+                <p class="card-text">
+                  I develop the design of the dekstop versions of all pages with
+                  design concept and the approved prototype.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title work-title">
+                  Adaptive <span class="work_number">05</span>
+                </h5>
+                <p class="card-text">
+                  To make the project look equally good on all devices, I make
+                  design options for mobile,tablet, as well as modal windows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title work-title">
+                  Final <span class="work_number">06</span>
+                </h5>
+                <p class="card-text">
+                  Transfer of the layout to the customer. If necessary, site
+                  layout is performed.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="container">
-        <div class="row">
-          <h1>INTERESTED IN WORKING TOGETHER?<br />
-           LET'S START!
-          </h1>
-          <br />
-          <div class="col-md-6">
-            <div class="row buttons">
-              <a href="mailto:ushitkovameri@outlook.com" target="_blank" class="button">Email</a>
-              <a href="https://www.linkedin.com/in/meri-ushitkova-048b1a220" target="_blank" class="button button-left">LinkedIn</a>
-            </div>
-        </div>
+        <h1>INTERESTED IN WORKING TOGETHER?<br />
+          LET'S START!
+        </h1>
+        <br />
+        <div class="col-md-6">
+          <div class="row buttons">
+            <a href="mailto:ushitkovameri@outlook.com" target="_blank" class="button">Email</a>
+            <a href="https://www.linkedin.com/in/meri-ushitkova-048b1a220" target="_blank" class="button button-left">LinkedIn</a>
         </div>
       </div>
     </section>
@@ -339,22 +270,22 @@
     <footer class="footer pt-2">
       <div class="container">
         <div class="row align-center">
-          <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
+          <div class="col-2 col-lg-2 mb-md-0 mb-4">
             <h6 class="clickable footer-heading d-flex align-items-center" id="aboutFooter">ABOUT</h6>
           </div>
-          <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
+          <div class="col-3 col-lg-2 mb-md-0 mb-4">
             <h6 class="clickable footer-heading d-flex align-items-center" id="projectsFooter">PORTFOLIO</h6>
           </div>
-          <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
+          <div class="col-2 col-lg-2 mb-md-0 mb-4 social-buttons">
             <h6 class="footer-heading d-flex align-items-center">
-              <i class="fa fa-linkedin-square ml-4 mr-4 clickable"  id="linkedin"></i
-              ><i class="fa fa-behance clickable" id="behance"></i>
+              <i class="fa fa-linkedin-square fa-2x ml-4 mr-4 clickable"  id="linkedin"></i
+              ><i class="fa fa-behance fa-2x clickable" id="behance"></i>
             </h6>
           </div>
-          <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
+          <div class="col-2 col-lg-2 mb-md-0 mb-4">
             <h6 class="clickable footer-heading d-flex align-items-center">RESUME</h6>
           </div>
-          <div class="col-md-5 col-lg-2 mb-md-0 mb-4">
+          <div class="col-2 col-lg-2 mb-md-0 mb-4">
             <h6 class="clickable footer-heading d-flex align-items-center">CONTACT</h6>
           </div>
         </div>

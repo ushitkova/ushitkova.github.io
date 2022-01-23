@@ -4,7 +4,7 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
-
+html,
 body,
 p {
   width: 100%;
@@ -55,6 +55,7 @@ a.button:hover {
   color: #000000;
   text-decoration: none;
   border: none;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px #fbdfd7;
 }
 
 section {
@@ -98,10 +99,6 @@ section p {
   font-size: 24px;
 }
 
-.main-container .row {
-  padding: 0 20px;
-}
-
 .container .row:first-of-type {
   padding: 0;
 }
@@ -112,6 +109,7 @@ section p {
   background: no-repeat center center / cover;
   background-image: url("./assets/hero.png");
   background-attachment: fixed;
+  max-width: 100%;
 }
 
 .hero .title {
@@ -180,78 +178,49 @@ section p {
   padding: 0 25px;
 }
 
+.projects .col-md {
+  background: #f17b02;
+  margin: 20px;
+  height: 250px;
+  text-align: center;
+  border-radius: 8px;
+  transition: box-shadow 200ms linear;
+  box-shadow: 0 0 10px #ffffff;
+  padding: 0;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.project.uss {
+  background: #f4eeec;
+  background: #f4eeec;
+}
+
+.card.projects {
+  position: relative;
+  display: inline-block;
+  margin: 50px 20px 50px 100px;
+}
+.card.projects .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  cursor: pointer;
+  width: 100%;
+}
+.card.projects:hover .img-top {
+  display: inherit;
+}
+
 .right-align {
   text-align: right;
 }
 
 .sm-only {
   display: none;
-}
-
-@media screen and (max-width: 800px) {
-  section {
-    padding-top: 0;
-  }
-
-  section h1 {
-    font-size: 32px;
-    padding-top: 26px;
-  }
-
-  .sm-only {
-    display: initial;
-  }
-
-  .lg-only {
-    display: none;
-  }
-
-  .container .row {
-    padding: 0 20px 0 20px;
-  }
-
-  section.hero {
-    background-position: 70% 0;
-    margin-bottom: 0;
-  }
-
-  .hero-box {
-    top: initial;
-    left: initial;
-    position: relative;
-    transform: initial;
-    margin-top: 60px;
-    margin-left: 10px;
-  }
-
-  .hero .title {
-    font-size: 46px;
-    line-height: 42px;
-    margin-bottom: 0;
-    text-align: left;
-    text-shadow: 0 0 10px black;
-  }
-
-  .hero .subtitle {
-    font-size: 19px;
-    margin-top: 9px;
-    margin-bottom: 0;
-  }
-
-  .about-me-desc-small {
-    margin-top: 10px;
-  }
-
-  .about-me-desc {
-    line-height: 32px;
-  }
-
-  .about-me-desc-small {
-    line-height: 25px;
-  }
-  .container {
-    padding: 0 15px;
-  }
 }
 
 .card {
@@ -263,6 +232,10 @@ section p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.img-fluid {
+  width: 350px;
 }
 
 h5 button {
@@ -314,6 +287,7 @@ div .work-title {
   font-weight: 400;
   font-size: 18px;
   padding-top: 10px;
+  margin-bottom: 50px;
 }
 
 .button-left {
@@ -350,4 +324,99 @@ footer h6 {
 
 .skills {
   margin-left: 30px;
+  justify-content: center;
+}
+
+.card-image {
+  height: 350px;
+}
+
+@media screen and (max-width: 800px) {
+  
+  section {
+    padding-top: 0;
+  }
+
+  section.about-me h1 {
+    border-top: none;
+  }
+
+  section h1 {
+    font-size: 32px;
+    padding-top: 26px;
+  }
+
+  .container .row {
+    padding: 0 20px 0 0;
+  }
+
+  section.hero {
+    background-position: 70% 0;
+    margin-bottom: 0;
+  }
+
+  .hero-box {
+    top: initial;
+    left: initial;
+    position: relative;
+    transform: initial;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+
+  .hero .title {
+    font-size: 46px;
+    line-height: 42px;
+    margin-bottom: 0;
+    text-align: left;
+    text-shadow: 0 0 10px black;
+  }
+
+  .hero .subtitle {
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 0;
+  }
+
+  .about-me-desc-small {
+    margin-top: 10px;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+
+  .container {
+    padding: 0 15px;
+    padding-right: 20px;
+  }
+
+  .card.projects {
+    position: relative;
+    display: inline-block;
+    margin: 20px 10px 20px 20px;
+  }
+
+  .card.projects:hover .img-top {
+    display: none;
+  }
+  footer .social-buttons {
+    display: none;
+  }
+  a.button:hover {
+    color: #000000;
+    text-decoration: none;
+    background-origin: padding-box;
+    box-shadow: none;
+    border: 2px solid #c7aca4;
+    box-sizing: border-box;
+  }
+}
+
+.new-project {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: no-repeat center center / cover;
+  background-image: url("./assets/coming_soon.jpg");
+  background-attachment: fixed;
 }

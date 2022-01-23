@@ -7,11 +7,11 @@ $("#linkedin").on("click", function () {
 });
 
 $("#aboutFooter").on("click", function () {
-  location.href = "#about-me"
+  location.href = "#about-me";
 });
 
 $("#projectsFooter").on("click", function () {
-  location.href = "#projects"
+  location.href = "#projects";
 });
 
 $("#behance").on("click", function () {
@@ -27,6 +27,30 @@ $("#linkedin").on("click", function () {
 
 $("#resume").click(function () {
   DownloadFile("UshitkovaMeri.pdf");
+});
+
+$("#project-uss").on("click", function () {
+  var url = window.location.href;
+  url = url.substring(0, url.indexOf("index.html"));
+  window.open(url + "project.html", "_blank");
+});
+
+$("#project-sugarwish").on("click", function () {
+  var url = window.location.href;
+  url = url.substring(0, url.indexOf("index.html"));
+  window.open(url + "project.html", "_blank");
+});
+
+$("#project-janebank").on("click", function () {
+  var url = window.location.href;
+  url = url.substring(0, url.indexOf("index.html"));
+  window.open(url + "project.html", "_blank");
+});
+
+$("#project-nlb").on("click", function () {
+  var url = window.location.href;
+  url = url.substring(0, url.indexOf("index.html"));
+  window.open(url + "project.html", "_blank");
 });
 
 function DownloadFile(fileName) {
