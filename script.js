@@ -7,11 +7,37 @@ $("#linkedin").on("click", function () {
 });
 
 $("#aboutFooter").on("click", function () {
-  location.href = "#about-me";
+  if (window.location.href.includes("project.html")) {
+    location.href = "#about-me";
+    location.href = location.href.replace("project.html", "index.html");
+  } else {
+    location.href = "#about-me";
+  }
 });
 
 $("#projectsFooter").on("click", function () {
+  if (window.location.href.includes("project.html")) {
+    location.href = "#projects";
+    location.href = location.href.replace("project.html", "index.html");
+  } else {
+    location.href = "projects";
+  }
+});
+
+$("#navAboutProject").on("click", function () {
+  location.href = "#about-me";
+  location.href = location.href.replace("project.html", "index.html");
+});
+
+
+$("#navProjectsProject").on("click", function () {
   location.href = "#projects";
+  location.href = location.href.replace("project.html", "index.html");
+});
+
+
+$("#logoHome").on("click", function () {
+  location.href="/";
 });
 
 $("#behance").on("click", function () {
@@ -26,6 +52,10 @@ $("#linkedin").on("click", function () {
 });
 
 $("#resume").click(function () {
+  DownloadFile("UshitkovaMeri.pdf");
+});
+
+$("#resumeFooter").click(function () {
   DownloadFile("UshitkovaMeri.pdf");
 });
 
