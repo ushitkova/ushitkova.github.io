@@ -2,6 +2,14 @@ $("#email").on("click", function () {
   window.location.href = "mailto:ushitkovameri@outlook.com";
 });
 
+$("#emailSugarwishFooter").on("click", function () {
+  window.location.href = "mailto:ushitkovameri@outlook.com";
+});
+
+$("#emailUssFooter").on("click", function () {
+  window.location.href = "mailto:ushitkovameri@outlook.com";
+});
+
 $("#linkedin").on("click", function () {
   window.open("https://www.linkedin.com/in/meri-ushitkova-048b1a220", "_blank");
 });
@@ -50,6 +58,10 @@ $("#linkedin").on("click", function () {
 });
 
 $("#resume").click(function () {
+  DownloadFile("UshitkovaMeri.pdf");
+});
+
+$("#resumeFooter").click(function () {
   DownloadFile("UshitkovaMeri.pdf");
 });
 
