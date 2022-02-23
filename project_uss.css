@@ -38,6 +38,10 @@ section p {
     padding-top: 0;
   }
 
+  .uss {
+    background-image: url("./assets/uss/mobile_uss_cover.png");
+  }
+
   section.about-me h1 {
     border-top: none;
   }

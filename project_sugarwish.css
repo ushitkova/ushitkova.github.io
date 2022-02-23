@@ -38,6 +38,10 @@ section p {
     padding-top: 0;
   }
 
+  .sugarwish {
+    background-image: url("./assets/sugarwish/mobile_sugarwish_cover.png");
+  }
+
   section.about-me h1 {
     border-top: none;
   }
