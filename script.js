@@ -7,18 +7,18 @@ $("#linkedin").on("click", function () {
 });
 
 $("#aboutFooter").on("click", function () {
-  if (window.location.href.includes("project.html")) {
+  if (window.location.href.includes("project")) {
     location.href = "#about-me";
-    location.href = location.href.replace("project.html", "index.html");
+    location.href = location.href.replace(/project.*$/i, "index.html");
   } else {
     location.href = "#about-me";
   }
 });
 
 $("#projectsFooter").on("click", function () {
-  if (window.location.href.includes("project.html")) {
+  if (window.location.href.includes("project")) {
     location.href = "#projects";
-    location.href = location.href.replace("project.html", "index.html");
+    location.href = location.href.replace(/project.*$/i, "index.html");
   } else {
     location.href = "projects";
   }
@@ -26,18 +26,16 @@ $("#projectsFooter").on("click", function () {
 
 $("#navAboutProject").on("click", function () {
   location.href = "#about-me";
-  location.href = location.href.replace("project.html", "index.html");
+  location.href = location.href.replace(/project.*$/i, "index.html");
 });
-
 
 $("#navProjectsProject").on("click", function () {
   location.href = "#projects";
-  location.href = location.href.replace("project.html", "index.html");
+  location.href = location.href.replace(/project.*$/i, "index.html");
 });
 
-
 $("#logoHome").on("click", function () {
-  location.href="/";
+  location.href = "/";
 });
 
 $("#behance").on("click", function () {
@@ -62,26 +60,26 @@ $("#resumeFooter").click(function () {
 $("#project-uss").on("click", function () {
   var url = window.location.href;
   url = url.substring(0, url.indexOf("index.html"));
-  window.open(url + "project.html", "_blank");
+  window.open(url + "project-uss.html", "_blank");
 });
 
 $("#project-sugarwish").on("click", function () {
   var url = window.location.href;
   url = url.substring(0, url.indexOf("index.html"));
-  window.open(url + "project.html", "_blank");
+  window.open(url + "project-sugarwish.html", "_blank");
 });
 
-$("#project-janebank").on("click", function () {
-  var url = window.location.href;
-  url = url.substring(0, url.indexOf("index.html"));
-  window.open(url + "project.html", "_blank");
-});
+// $("#project-janebank").on("click", function () {
+//   var url = window.location.href;
+//   url = url.substring(0, url.indexOf("index.html"));
+//   window.open(url + "project.html", "_blank");
+// });
 
-$("#project-nlb").on("click", function () {
-  var url = window.location.href;
-  url = url.substring(0, url.indexOf("index.html"));
-  window.open(url + "project.html", "_blank");
-});
+// $("#project-nlb").on("click", function () {
+//   var url = window.location.href;
+//   url = url.substring(0, url.indexOf("index.html"));
+//   window.open(url + "project.html", "_blank");
+// });
 
 function DownloadFile(fileName) {
   //Set the File URL.

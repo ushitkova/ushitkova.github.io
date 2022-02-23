@@ -1,0 +1,58 @@
+section {
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+section.sugarwish {
+  padding-top: 0;
+  margin-bottom: 0px;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+section p {
+  font-family: "Roboto";
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.container .row:first-of-type {
+  padding: 0;
+}
+
+.sugarwish {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: no-repeat center center / cover;
+  background-image: url("./assets/sugarwish/sugarwish_cover.png");
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding-top: 0;
+  }
+
+  section.about-me h1 {
+    border-top: none;
+  }
+
+  section h1 {
+    font-size: 32px;
+    padding-top: 26px;
+  }
+
+  .container .row {
+    padding: 0 20px 0 0;
+  }
+
+  section.sugarwish {
+    background-position: 70% 0;
+    margin-bottom: 0;
+  }
+}
